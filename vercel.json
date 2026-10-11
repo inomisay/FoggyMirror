@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/fog.html", "destination": "/", "permanent": true }
+  ]
+}

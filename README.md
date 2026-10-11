@@ -16,7 +16,7 @@ python -m http.server
 
 Then open <http://localhost:8000/> and press the button. Allow the camera and the microphone when asked.
 
-There is no build step and nothing to install. The whole app is one file, `fog.html`. `index.html` only redirects to it.
+There is no build step and nothing to install. The whole app is one file, `index.html`.
 
 You need a recent Chrome, Edge or Firefox, a webcam, and an internet connection on first load (the hand-tracking model is downloaded from jsDelivr; nothing is sent back). A microphone is optional: without one, hold Space to fog.
 
@@ -78,7 +78,7 @@ Frames are fed to the trackers by the app's own animation loop. MediaPipe's `cam
 - **Every pixel size is multiplied by `devicePixelRatio`**, capped at 2.
 - **Errors are not caught.** They go to the console and to a red banner on screen.
 
-All the tuned values (fog opacity, blur, blob count, smoothing, thresholds) are named constants at the top of the script in `fog.html`.
+All the tuned values (fog opacity, blur, blob count, smoothing, thresholds) are named constants at the top of the script in `index.html`.
 
 ## Troubleshooting
 
@@ -90,7 +90,3 @@ All the tuned values (fog opacity, blur, blob count, smoothing, thresholds) are 
 | Hands are not picked up | Wait for "loading hand tracking…" to disappear, and keep your hand in good light, fully in frame. |
 | The mirror fogs by itself | The room is loud or the level is changing a lot. Give the noise floor a few seconds to settle. If it happens while wiping with the sound on, mute with `M` or use headphones. |
 | It runs slowly | Tracking two hands is heavier than one. Make the browser window smaller. |
-
-## Author
-
-Created by [inomisay](https://github.com/inomisay).
