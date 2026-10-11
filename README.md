@@ -6,6 +6,10 @@ Your webcam is the mirror. Breathe at your laptop and fog blooms where your brea
 
 Everything runs locally. No video, audio or data ever leaves your machine.
 
+## Credit
+
+This project was inspired by [Lilian Chiu's fog mirror tutorial](https://lilian.world/share/fogmirror-tutorial/). I built it after following her tutorial; go and see the original.
+
 ## Run it
 
 Browsers only allow the camera on `https` or `localhost`, so double-clicking the file will not work. Serve the folder instead:
